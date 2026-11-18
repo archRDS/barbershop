@@ -1,0 +1,55 @@
+.github-pages .site-preloader:not(.pages-loader-active),
+.github-pages .mobile-nav[hidden],
+.github-pages .menu-toggle:not(.pages-menu-ready),
+.github-pages .pages-work-dialog:not([open]) {
+  display: none !important;
+}
+
+.github-pages .landing-page .pages-contact {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.github-pages .pages-contact p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.github-pages .pages-contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.github-pages .pages-contact-actions a {
+  max-width: 100%;
+  white-space: normal;
+}
+
+.github-pages [data-slot="carousel-content"]:not(.pages-embla-ready) {
+  overflow-x: auto;
+}
+
+.github-pages .pages-embla-ready {
+  touch-action: pan-y pinch-zoom;
+}
+
+.github-pages .pages-work-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  border: 0;
+}
+
+.github-pages .pages-work-dialog::backdrop {
+  background: rgb(0 0 0 / 82%);
+}
+
+.github-pages .pages-work-dialog [data-slot="dialog-close"] {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 31px;
+  line-height: 1;
+}
